@@ -1,6 +1,6 @@
-from setuptools import find_packages, setup
 from glob import glob
 
+from setuptools import find_packages, setup
 
 package_name = 'turtle_bringup'
 
@@ -14,10 +14,11 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', glob('launch/*.launch.py')),
     ],
+    package_data={'': ['py.typed']},
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='root',
-    maintainer_email='s.markina@g.nsu.ru',
+    maintainer='GololmolzinDaniil',
+    maintainer_email='golomolzindaniil321@gmail.com',
     description='TODO: Package description',
     license='Apache-2.0',
     extras_require={
