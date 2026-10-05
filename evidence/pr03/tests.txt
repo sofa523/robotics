@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+rootdir: /work/robotics/src/patrol
+plugins: ament-pep257-0.17.5, ament-lint-0.17.5, launch-testing-ros-0.26.12, ament-flake8-0.17.5, ament-xmllint-0.17.5, ament-copyright-0.17.5, launch-testing-3.4.11, colcon-core-0.21.1
+collected 4 items
+
+src/patrol/test/test_patrol.py ....                                      [100%]
+
+============================== 4 passed in 1.44s ===============================
