@@ -1,8 +1,7 @@
-"""Выбор (linear.x, angular.z) независимо от ROS."""
-
-
-def choose_command(pose):
-    """Стоять до первой позы, затем двигаться с фиксированной командой."""
+def choose_command(pose, linear_speed: float, turn_rate: float):
+    '''
+    Выбор аргументов черепашки относительно ее позы
+    '''
     if pose is None:
         return 0.0, 0.0
-    return 0.5, 0.3
+    return linear_speed, turn_rate
